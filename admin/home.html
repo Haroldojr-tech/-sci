@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Home</title>
+  <link rel="stylesheet" href="../estilos/style.css">
+  <link rel="stylesheet" href="../estilos/admin.css">
+</head>
+<body>
+  <div class="admin-container">
+    <div class="admin-card">
+      <div class="admin-header">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
+        </svg>
+      </div>
+      <h1 class="admin-title">Bem-vindo, Admin!</h1>
+      <p class="admin-subtitle">Area administrativa restrita</p>
+      <div class="admin-info">
+        <div class="admin-stat">
+          <span class="number" id="postCount">0</span>
+          <span class="label">Posts</span>
+        </div>
+        <div class="admin-stat">
+          <span class="number">1</span>
+          <span class="label">Usuario</span>
+        </div>
+        <div class="admin-stat">
+          <span class="number">Ativo</span>
+          <span class="label">Status</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulario de Criar/Editar Post -->
+    <div class="admin-card post-form-card">
+      <h2 class="form-title" id="formTitle">Criar Novo Post</h2>
+      <form id="postForm">
+        <input type="hidden" id="editId">
+
+        <div class="form-group">
+          <label>Titulo do Post</label>
+          <input type="text" id="postTitle" placeholder="Ex: UNIVERSE OF UI" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Numero 1</label>
+            <input type="text" id="stat1num" placeholder="Ex: 2626" required>
+          </div>
+          <div class="form-group">
+            <label>Label 1</label>
+            <input type="text" id="stat1label" placeholder="Ex: UI elements" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Numero 2</label>
+            <input type="text" id="stat2num" placeholder="Ex: 100%" required>
+          </div>
+          <div class="form-group">
+            <label>Label 2</label>
+            <input type="text" id="stat2label" placeholder="Ex: Free for use" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Numero 3</label>
+            <input type="text" id="stat3num" placeholder="Ex: 38,631" required>
+          </div>
+          <div class="form-group">
+            <label>Label 3</label>
+            <input type="text" id="stat3label" placeholder="Ex: Contributers" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Icone</label>
+          <select id="postIcon">
+            <option value="code">Code</option>
+            <option value="star">Star</option>
+            <option value="heart">Heart</option>
+            <option value="bolt">Bolt</option>
+            <option value="gem">Gem</option>
+            <option value="fire">Fire</option>
+          </select>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="form-submit" id="submitBtn">Criar Post</button>
+          <button type="button" class="form-cancel" id="cancelEdit" style="display:none;">Cancelar</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Lista de Posts -->
+    <div class="admin-card posts-list-card">
+      <h2 class="form-title">Posts Criados</h2>
+      <div id="postsList"></div>
+    </div>
+
+    <a href="../index.html" class="logout-btn">Sair (Logout)</a>
+  </div>
+
+  <script src="../js/posts.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

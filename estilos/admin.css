@@ -1,0 +1,296 @@
+/* ========== Admin Page ========== */
+
+.admin-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #0d1117;
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.admin-card {
+  background: #1b233d;
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  width: 90%;
+}
+
+.admin-header {
+  height: 100px;
+  background: linear-gradient(45deg, rgb(4, 159, 187), rgb(80, 246, 255));
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -80px -40px 30px;
+}
+
+.admin-header svg {
+  width: 50px;
+  height: 50px;
+  fill: #1b233d;
+}
+
+.admin-title {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.admin-subtitle {
+  color: rgba(170, 222, 243, 0.721);
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.admin-info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.admin-stat {
+  text-align: center;
+}
+
+.admin-stat .number {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #049fbb;
+}
+
+.admin-stat .label {
+  font-size: 12px;
+  color: rgba(170, 222, 243, 0.721);
+}
+
+.logout-btn {
+  background: linear-gradient(45deg, rgb(4, 159, 187), rgb(80, 246, 255));
+  border: none;
+  border-radius: 10px;
+  padding: 12px 30px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.logout-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(4, 159, 187, 0.5);
+}
+
+/* ========== Post Form ========== */
+
+.post-form-card,
+.posts-list-card {
+  text-align: left;
+}
+
+.form-title {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  color: rgba(170, 222, 243, 0.721);
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #049fbb;
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form-group select option {
+  background: #1b233d;
+  color: white;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form-submit {
+  flex: 1;
+  padding: 12px;
+  background: linear-gradient(45deg, rgb(4, 159, 187), rgb(80, 246, 255));
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.form-submit:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 20px rgba(4, 159, 187, 0.5);
+}
+
+.form-cancel {
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-cancel:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ========== Posts List ========== */
+
+.no-posts {
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.post-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.post-item:hover {
+  border-color: rgba(4, 159, 187, 0.3);
+}
+
+.post-item-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.post-item-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.post-item-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.post-item-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.post-item-text strong {
+  color: white;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post-item-text span {
+  color: rgba(170, 222, 243, 0.5);
+  font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post-item-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-edit {
+  background: rgba(4, 159, 187, 0.2);
+  color: #049fbb;
+}
+
+.btn-edit:hover {
+  background: rgba(4, 159, 187, 0.4);
+  transform: scale(1.05);
+}
+
+.btn-delete {
+  background: rgba(255, 71, 87, 0.2);
+  color: #ff4757;
+}
+
+.btn-delete:hover {
+  background: rgba(255, 71, 87, 0.4);
+  transform: scale(1.05);
+}

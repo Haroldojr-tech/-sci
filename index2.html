@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S.C.I - Sistema de Comunicação Integrada</title>
+  <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>S.C.I - Sistema de Comunicação Integrada</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="#comunicados">Comunicados</a></li>
+        <li><a href="#calendario">Calendário</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <!-- Seção de boas-vindas -->
+    <section id="bem-vindo">
+      <h2>Bem-vindo ao S.C.I</h2>
+      <p>Este sistema mantém os alunos informados sobre comunicados, editais, festividades, feriados e muito mais.</p>
+    </section>
+
+    <!-- Seção de login -->
+    <section id="login">
+      <h2>Login</h2>
+      <form action="login.php" method="post">
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" name="usuario" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <button type="submit">Entrar</button>
+      </form>
+    </section>
+
+    <!-- Seção de comunicados -->
+    <section id="comunicados">
+      <h2>Últimos Comunicados</h2>
+      <article>
+        <h3>Edital de Monitoria</h3>
+        <p>Publicado em 01/09/2026 - Inscrições abertas até 15/09.</p>
+      </article>
+      <article>
+        <h3>Feriado da Independência</h3>
+        <p>Não haverá aulas no dia 07/09/2026.</p>
+      </article>
+    </section>
+
+    <!-- Seção de calendário -->
+    <section id="calendario">
+      <h2>Calendário de Eventos</h2>
+      <ul>
+        <li>📅 10/09 - Festival Cultural</li>
+        <li>📅 15/09 - Prazo final para inscrição em monitoria</li>
+        <li>📅 20/09 - Semana Acadêmica</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer id="contato">
+    <p>&copy; 2026 Instituto Federal do Tocantins - Sistema de Comunicação Integrada</p>
+  </footer>
+</body>
+
+</html>
