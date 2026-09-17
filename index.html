@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.C.I - Sistema de Comunicação Integrada</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link javascript src="api.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho teste -->
+    <header>
+        <h1>S.C.I - Sistema de Comunicação Integrada</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#comunicados">Comunicados</a></li>
+                <li><a href="#calendario">Calendário</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<body>
+  <div class="container swiper">
+    <div class="slider-wrapper">
+      <div class="card-list swiper-wrapper">
+        <div class="card-item swiper-slide">
+          <img src="images/img-1.jpg" alt="User Image" class="user-image">
+          <h2 class="user-name">James Wilson</h2>
+          <p class="user-profession">Software Developer</p>
+          <button class="message-button">Message</button>
+        </div>
+        <div class="card-item swiper-slide">
+          <img src="images/img-2.jpg" alt="User Image" class="user-image">
+          <h2 class="user-name">Sarah Johnson</h2>
+          <p class="user-profession">Graphic Designer</p>
+          <button class="message-button">Message</button>
+        </div>
+        <div class="card-item swiper-slide">
+          <img src="images/img-3.jpg" alt="User Image" class="user-image">
+          <h2 class="user-name">Michael Brown</h2>
+          <p class="user-profession">Project Manager</p>
+          <button class="message-button">Message</button>
+        </div>
+        <div class="card-item swiper-slide">
+          <img src="images/img-4.jpg" alt="User Image" class="user-image">
+          <h2 class="user-name">Emily Davis</h2>
+          <p class="user-profession">Marketing Specialist</p>
+          <button class="message-button">Message</button>
+        </div>
+        <div class="card-item swiper-slide">
+          <img src="images/img-5.jpg" alt="User Image" class="user-image">
+          <h2 class="user-name">Christopher Garcia</h2>
+          <p class="user-profession">Data Scientist</p>
+          <button class="message-button">Message</button>
+        </div>
+        <div class="card-item swiper-slide">
+          <img src="images/img-6.jpg" alt="User Image" class="user-image">
+          <h2 class="user-name">Richard Wilson</h2>
+          <p class="user-profession">Product Designer</p>
+          <button class="message-button">Message</button>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-slide-button swiper-button-prev"></div>
+      <div class="swiper-slide-button swiper-button-next"></div>
+    </div>
+  </div>
+  <!-- Linking SwiperJS script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Linking custom script -->
+  <script src="script.js"></script>
+</body>
+</html>
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção de boas-vindas -->
+        <section id="bem-vindo">
+            <h2>Bem-vindo ao S.C.I</h2>
+            <p>Este sistema mantém os alunos informados sobre comunicados, editais, festividades, feriados e muito mais.</p>
+        </section>
+
+        <!-- Seção de login -->
+        <section id="login">
+            <h2>Login</h2>
+            <form action="login.php" method="post">
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" name="usuario" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+
+        <!-- Seção de comunicados -->
+        <section id="comunicados">
+            <h2>Últimos Comunicados</h2>
+            <article>
+                <h3>Edital de Monitoria</h3>
+                <p>Publicado em 01/09/2026 - Inscrições abertas até 15/09.</p>
+            </article>
+            <article>
+                <h3>Feriado da Independência</h3>
+                <p>Não haverá aulas no dia 07/09/2026.</p>
+            </article>
+        </section>
+
+        <!-- Seção de calendário -->
+        <section id="calendario">
+            <h2>Calendário de Eventos</h2>
+            <ul>
+                <li>📅 10/09 - Festival Cultural</li>
+                <li>📅 15/09 - Prazo final para inscrição em monitoria</li>
+                <li>📅 20/09 - Semana Acadêmica</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="contato">
+        <p>&copy; 2026 Instituto Federal do Tocantins - Sistema de Comunicação Integrada</p>
+    </footer>
+</body>
+ <script src="api.js"></script>
+</html>
