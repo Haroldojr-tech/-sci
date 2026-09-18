@@ -58,7 +58,7 @@ async function renderPosts(searchTerm = '') {
             </div>
             <div class="item">
               <a id="link-${post.id}" href="${post.postLink || '#'}" target="_blank" onclick="handlePostClick(event, ${post.id})" class="open-btn" style="color: #049fbb; font-size: 24px; text-decoration: none; display: flex; flex-direction: column; align-items: center; width: 100%; height: 100%; cursor: pointer;">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 20px; height: 20px; fill: #049fbb; margin-bottom: 5px;"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg>
+                <i class="fa-solid fa-arrow-up-right-from-square" style="color: #049fbb; font-size: 15px; margin-bottom: 5px;"></i>
                 <span class="regular-text">Abrir</span>
               </a>
             </div>
@@ -73,10 +73,25 @@ async function renderPosts(searchTerm = '') {
     window.swiperInstance.destroy(true, true);
   }
 
+  // Garante slides suficientes para o loop infinito (Swiper precisa de pelo menos 2x o necessário)
+  const slides = Array.from(container.children);
+  if (slides.length > 0 && slides.length < 8) {
+    const copies = Math.ceil(8 / slides.length);
+    for (let i = 1; i < copies; i++) {
+      slides.forEach(slide => {
+        container.appendChild(slide.cloneNode(true));
+      });
+    }
+  }
+
   window.swiperInstance = new Swiper('.swiper', {
     loop: true,
     grabCursor: true,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    spaceBetween: 15,
     slidesPerGroup: 1,
+    watchSlidesProgress: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -87,25 +102,22 @@ async function renderPosts(searchTerm = '') {
       prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-      0: { 
-        slidesPerView: 'auto', 
-        spaceBetween: 15,
-        centeredSlides: true
-      },
-      768: { 
-        slidesPerView: 3, 
+      768: {
+        slidesPerView: 3,
+        centeredSlides: false,
         spaceBetween: 20,
-        centeredSlides: false
       },
-      1024: { 
-        slidesPerView: 4, 
+      1024: {
+        slidesPerView: 4,
+        centeredSlides: false,
         spaceBetween: 30,
-        centeredSlides: false
       }
     },
     autoplay: {
       delay: 3000,
-      disableOnInteraction: false
+      disableOnInteraction: false,
+      pauseOnMouseEnter: false,
+      stopOnLastSlide: false
     }
   });
 }

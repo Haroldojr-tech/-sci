@@ -63,9 +63,9 @@ const ICONS = {
       <div class="quadrado"></div>
       <div class="quadrado"></div>
     </div>`,
-  clock: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg"><path fill="white" d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>`,
-  calendar: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg"><path fill="white" d="M128 0c13.3 0 24 10.7 24 24V64H296V24c0-13.3 10.7-24 24-24s24 10.7 24 24V64h40c35.3 0 64 28.7 64 64v16 48V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V192 144 128C0 92.7 28.7 64 64 64h40V24c0-13.3 10.7-24 24-24zM400 192H48V448c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></svg>`,
-  secretary: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg"><path fill="white" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>`
+  clock: `<i class="fa-solid fa-clock" style="color: white; font-size: 20px;"></i>`,
+  calendar: `<i class="fa-solid fa-calendar-days" style="color: white; font-size:20px;"></i>`,
+  secretary: `<i class="fa-solid fa-user-tie" style="color: white; font-size: 20px;"></i>`
 };
 
 async function getPosts() {

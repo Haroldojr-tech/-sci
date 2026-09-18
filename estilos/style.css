@@ -282,10 +282,12 @@ body {
 .card .bottom-section .row .item .big-text {
   font-size: 12px;
   display: block;
+  font-family: 'Marvel';
 }
 
 .card .bottom-section .row .item .regular-text {
   font-size: 9px;
+  font-family: 'Lexend Tera';
 }
 
 .card .bottom-section .row .item:nth-child(2) {
