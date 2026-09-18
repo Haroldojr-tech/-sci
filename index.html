@@ -4,22 +4,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SCI</title>
+  <title>SCI - Sistema de Comunicação Integrada</title>
+
+  <!-- Open Graph / WhatsApp / Redes Sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SCI - Sistema de Comunicação Integrada">
+  <meta property="og:description" content="Sistema de Comunicação Integrada do IFTO Campus Colinas">
+  <meta property="og:image" content="https://sci.gt.tc/logo.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:url" content="https://sci.gt.tc/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://sci.gt.tc/logo.png">
+  <link rel="icon" type="image/png" href="logo.png">
   <link rel="stylesheet" href="estilos/style.css">
   <link rel="stylesheet" href="estilos/posts.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!--Meta tags de fonts e icones-->
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.1/lottie.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Molle:ital@1&family=Nabla&family=Reggae+One&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Amatic+SC:wght@400;700&family=Anek+Telugu:wght@100..800&family=Anton&family=Bangers&family=Bebas+Neue&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&family=Changa:wght@200..800&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Dancing+Script:wght@400..700&family=Datatype:wght@100..900&family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=Gloria+Hallelujah&family=Indie+Flower&family=Jost:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kaushan+Script&family=Maven+Pro:wght@400..900&family=Orbitron:wght@400..900&family=Pacifico&family=Permanent+Marker&family=Rajdhani:wght@300;400;500;600;700&family=Righteous&family=Russo+One&family=Satisfy&family=Shadows+Into+Light&family=Shizuru&family=Teko:wght@300..700&family=Yanone+Kaffeesatz:wght@200..700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aboreto&family=Aldrich&family=Architects+Daughter&family=Bad+Script&family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Buda:wght@300&family=Cinzel+Decorative:wght@400;700;900&family=Coda:wght@400;800&family=Cutive+Mono&family=Darker+Grotesque:wght@300..900&family=Dongle&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Fredericka+the+Great&family=Georama:ital,wght@0,100..900;1,100..900&family=Goldman:wght@400;700&family=Jura:wght@300..700&family=Michroma&family=Ms+Madi&family=Nanum+Pen+Script&family=Nixie+One&family=Nova+Square&family=Palanquin+Dark:wght@400;500;600;700&family=Parisienne&family=Poiret+One&family=Racing+Sans+One&family=Reem+Kufi:wght@400..700&family=Syncopate:wght@400;700&family=Whisper&family=ZCOOL+XiaoWei&family=Zeyada&display=swap"
+    rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Baumans&family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Doppio+One&family=Federo&family=Finger+Paint&family=Gluten:wght@100..900&family=Iceland&family=Inder&family=Lexend+Tera:wght@100..900&family=Madimi+One&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=MedievalSharp&family=Rubik+Dirt&family=Sarpanch:wght@400;500;600;700;800;900&family=The+Girl+Next+Door&family=Uncial+Antiqua&family=Waterfall&family=Wire+One&family=Zen+Dots&family=Zen+Kurenaido&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <!-- Botao Login canto superior direito -->
-  <div class="login-area">
-    <button class="login-btn" id="openLogin">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="login-icon">
-        <path fill="white" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
+  <section class="cabecalho">
+    <div class="logoifto">
+      <div class="quadrado"></div>
+      <div class="quadrado"></div>
+      <div class="quadrado"></div>
+      <div class="quadrado"></div>
+      <div class="quadrado"></div>
+      <div class="quadrado"></div>
+      <div class="quadrado"></div>
+      <div class="quadrado"></div>
+      <div class="quadrado"></div>
+      <div class="quadrado"></div>
+    </div>
+    <div class="cabliteral">
+      <h1 class="titulo">S.C.I - Sistema de Comunicação Integrada</h1>
+      <h2 class="subtitulo"> ULTIMAS POSTAGENS</h2>
+    </div>
+
+    <!-- Barra de Pesquisa -->
+    <div class="search-container">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="search-icon">
+        <path
+          d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
       </svg>
-      <span>Entrar</span>
-    </button>
-  </div>
+      <input type="text" id="searchInput" placeholder="Pesquisar assunto...">
+    </div>
+
+    <!-- Botao Login canto superior direito -->
+    <div class="login-area">
+      <button class="login-btn" id="openLogin">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="login-icon">
+          <path fill="white"
+            d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+        </svg>
+        <span>Entrar</span>
+      </button>
+    </div>
+  </section>
 
   <!-- Modal de Login -->
   <div class="login-overlay" id="loginOverlay">
@@ -28,7 +91,8 @@
       <div class="modal-body">
         <div class="modal-avatar">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="avatar-icon">
-            <path fill="white" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
+            <path fill="white"
+              d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
           </svg>
         </div>
         <h2 class="modal-title">Area Restrita</h2>
@@ -48,11 +112,13 @@
   </div>
 
   <!-- Carrossel de Posts (preenchido via JS) -->
-  <div class="swiper slider-wrapper">
-    <div class="swiper-wrapper" id="postsContainer">
+  <div class="slider-wrapper">
+    <div class="swiper">
+      <div class="swiper-wrapper" id="postsContainer">
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
-
-    <div class="swiper-pagination"></div>
+    <!-- Setas fora do swiper para nunca serem cortadas pelo overflow -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
   </div>
@@ -62,5 +128,100 @@
   <script src="js/script.js"></script>
   <script src="js/render.js"></script>
 </body>
+<footer>
+  <!-- Footer -->
+  <div id="footer" role="contentinfo">
+    <a name="afooter" id="afooter"></a>
+    <div id="doormat-container" class="columns-4">
+      <div class="doormatColumn column-0">
+        <section class="doormatSection">
+          <h3 class="doormatSectionHeader">Cursos</h3>
+          <p class="doormatSectionBody">
+            <a href="https://www.ifto.edu.br/cursos/ead" class="external-link">A distância</a>
+          </p>
+          <p class="doormatSectionBody">
+            <a href="https://www.ifto.edu.br/cursos/tecnicos" class="external-link">Técnicos</a>
+          </p>
+          <p class="doormatSectionBody">
+            <a href="https://www.ifto.edu.br/cursos/graduacao" class="external-link">Graduação</a>
+          </p>
+          <p class="doormatSectionBody">
+            <a href="https://www.ifto.edu.br/cursos/pos-graduacao" class="external-link">Pós-graduação</a>
+          </p>
+          <p class="doormatSectionBody">
+            <a href="https://www.ifto.edu.br/cursos/fic-eja-proeja" class="external-link">Proeja</a>
+          </p>
+          <p class="doormatSectionBody">
+            <a href="https://www.ifto.edu.br/cursos/fic/" class="external-link">Qualificação Profissional (FIC)</a>
+          </p>
+        </section>
+      </div>
+      <div class="doormatColumn column-1">
+        <section class="doormatSection">
+          <h3 class="doormatSectionHeader">Assuntos</h3>
+          <p class="doormatSectionBody">
+            <a href="https://www.ifto.edu.br/centrais-de-conteudos/documentos-institucionais"
+              class="external-link">Documentos Institucionais</a>
+          </p>
+          <p class="doormatSectionBody">
+            <a href="https://www.ifto.edu.br/ifto/mais-acessados" class="external-link">Mais acessados</a>
+          </p>
+          <p class="doormatSectionBody">
+            <a href="https://www.ifto.edu.br/ifto/responsabilidade-socioambiental"
+              class="external-link">Responsabilidade Socioambiental</a>
+          </p>
+        </section>
+      </div>
+      <div class="doormatColumn column-2">
+        <section class="doormatSection">
+          <h3 class="doormatSectionHeader">Como ingressar</h3>
+          <p class="doormatSectionBody">
+            <a href="https://www.ifto.edu.br/cursos/formas-de-ingresso-no-ifto/acesso-ifto" class="external-link">Acesso
+              IFTO</a>
+          </p>
+          <p class="doormatSectionBody">
+            <a href="https://www.ifto.edu.br/cursos/formas-de-ingresso-no-ifto/vestibular" class="external-link">PSU</a>
+          </p>
+          <p class="doormatSectionBody">
+            <a href="https://www.ifto.edu.br/cursos/formas-de-ingresso-no-ifto/nota-do-enem"
+              class="external-link">Sisu</a>
+          </p>
+          <p class="doormatSectionBody">
+            <a href="https://www.ifto.edu.br/cursos/formas-de-ingresso-no-ifto/portador-de-diploma"
+              class="external-link">Portador de diploma</a>
+          </p>
+          <p class="doormatSectionBody">
+            <a href="https://www.ifto.edu.br/cursos/formas-de-ingresso-no-ifto/transferencias"
+              class="external-link">Transferência</a>
+          </p>
+        </section>
+      </div>
+      <div class="doormatColumn column-3">
+        <section class="doormatSection">
+          <h3 class="doormatSectionHeader">RSS</h3>
+          <p class="doormatSectionBody">
+            <a href="https://www.ifto.edu.br/noticias/ultimas-noticias/RSS" class="external-link">Assine</a>
+          </p>
+        </section>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div id="footer-brasil" class="footer-logos">
+      <div>
+        <a href="https://www.acessoainformacao.gov.br/" class="logo-acesso">
+          <img src="https://www.ifto.edu.br/++theme++portal-do-ifto/img/acesso-a-infornacao.png"
+            alt="Acesso a Informação">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="extra-footer">
+    <p>
+      Desenvolvido pelos alunos: Haroldo, Silvana, Rodrigo e Paloma
+      <a href="https://sci.gt.tc">SCI</a>
+    </p>
+  </div>
+  <!-- /Footer-->
+</footer>
 
 </html>
